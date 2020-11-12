@@ -1,8 +1,9 @@
 
-int fonctMax(int a, int b){
+int fonctMax(int a, int b)
+{
     int max=0;
 
-    if (a <= b)
+    if (a < b)
     {
         max=b;
     }else

@@ -4,7 +4,7 @@
 
 int main() {
     
-    int x,y,max;
+    int x,y;
 	
    printf("Entrer les deux entiers a comparer \n");
    /* On vérifie si scanf renvoie bien 1 */
@@ -12,8 +12,8 @@ int main() {
 		/* Si ce n'est pas le cas,
 		 * on vide le buffer, et on redemande avec la boucle while*/
 	printf("Entrez des valeurs  differentes et de type entier \n");
-		int c;
-		while ((c=getchar()) != '\n' && c != EOF);//EOF = End Of File
+		char c;
+		while ((c=getchar()) != '\n' && c != EOF);
 	}
    printf("Le max entre %d et %d est %d\n", x,y,fonctMax(x,y));
 
